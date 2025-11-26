@@ -3280,21 +3280,25 @@
                 border-radius: 12px;
             }
 
-            /* Hero video container - taller aspect for small mobile */
+            /* Hero video container - crop out mac window chrome on mobile */
             .hero-content-image {
                 border-radius: 12px;
                 aspect-ratio: 1/1;
-                min-height: 300px;
+                min-height: 280px;
                 overflow: hidden;
+                position: relative;
             }
 
-            /* Crop out mac window chrome completely, show just the chart content */
+            /* Hide mac window chrome - shift video up and scale to crop top */
             .hero-content-image video {
-                min-height: 300px;
+                position: absolute;
+                top: -15%;
+                left: -10%;
+                width: 120% !important;
+                height: 130%;
+                min-height: 350px;
                 object-fit: cover;
-                object-position: center center;
-                transform: scale(1.6);
-                transform-origin: center 40%;
+                object-position: center top;
             }
 
             /* Feature display */
@@ -3372,23 +3376,25 @@
                 padding: 0;
             }
 
-            /* Hero image container - taller on mobile for better visibility */
+            /* Hero image container - crop mac window chrome on tablet */
             .hero-content-image {
                 height: auto;
-                min-height: 320px;
+                min-height: 300px;
                 aspect-ratio: 4/3;
                 overflow: hidden;
+                position: relative;
             }
 
-            /* Video - crop out mac window chrome completely, zoom into chart content */
+            /* Hide mac window chrome - shift video up to crop the title bar */
             .hero-content-image video {
-                width: 100% !important;
-                height: 100%;
-                min-height: 320px;
+                position: absolute;
+                top: -12%;
+                left: -5%;
+                width: 110% !important;
+                height: 125%;
+                min-height: 380px;
                 object-fit: cover;
-                object-position: center center;
-                transform: scale(1.5);
-                transform-origin: center 40%;
+                object-position: center top;
             }
 
             /* Stacked features section */
