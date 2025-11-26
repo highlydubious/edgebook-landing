@@ -3139,16 +3139,30 @@
             }
 
             .footer-content {
-                display: flex;
-                flex-direction: column;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+                text-align: left;
+            }
+
+            /* Brand section spans full width */
+            .footer-content > div:first-child {
+                grid-column: 1 / -1;
                 text-align: center;
-                align-items: center;
+                margin-bottom: 8px;
             }
 
             .footer-links {
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
+                gap: 8px;
+            }
+
+            .footer-links-title {
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
+
+            .footer-link {
+                font-size: 13px;
             }
 
             .footer-bottom {
