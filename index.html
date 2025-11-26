@@ -305,16 +305,13 @@
         }
 
         .nav-logo-icon {
-            width: 28px;
-            height: 28px;
-            background: var(--gradient-text);
+            width: 36px;
+            height: 36px;
             border-radius: 6px;
+            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 800;
-            font-size: 14px;
-            color: var(--bg-primary);
             transition: transform 0.3s ease;
         }
 
@@ -324,9 +321,11 @@
 
         .nav-logo-text {
             font-family: 'Space Grotesk', sans-serif;
-            font-weight: 700;
-            font-size: 16px;
+            font-weight: 800;
+            font-size: 24px;
+            letter-spacing: -0.02em;
             color: var(--text-primary);
+            font-style: italic;
         }
 
         .nav-links {
@@ -3184,7 +3183,9 @@
     <nav class="nav">
         <div class="nav-inner">
             <a href="#" class="nav-logo">
-                <div class="nav-logo-icon">E</div>
+                <div class="nav-logo-icon">
+                    <img src="assets/images/logo/logo.png" alt="EdgeBook logo" style="width:100%; height:100%; object-fit: contain;">
+                </div>
                 <span class="nav-logo-text">EDGEBOOK</span>
             </a>
             <div class="nav-links">
@@ -3355,14 +3356,18 @@
                         <source src="assets/videos/Tagging & Notes.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1245' height='700'><rect fill='%23112943' width='100%25' height='100%25'/><text x='50%25' y='50%25' fill='%23ffffff' font-family='Inter' font-size='48' text-anchor='middle'>Patterns</text></svg>"
-                        alt="Patterns" data-feature="patterns">
+                    <video muted loop playsinline preload="auto" data-feature="patterns">
+                        <source src="assets/videos/Patterns.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                     <video muted loop playsinline data-feature="strategies">
                         <source src="assets/videos/strategiesandsetups.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1245' height='700'><rect fill='%23173a60' width='100%25' height='100%25'/><text x='50%25' y='50%25' fill='%23ffffff' font-family='Inter' font-size='48' text-anchor='middle'>Share</text></svg>"
-                        alt="Share" data-feature="share">
+                    <video muted loop playsinline preload="auto" data-feature="share">
+                        <source src="assets/videos/Sharing.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 <div class="hero-content-tabs">
                     <div class="hero-tab-slider"></div>
@@ -3560,8 +3565,8 @@
     <section class="stacked-features-section">
         <div class="container">
             <div class="stacked-features-header reveal">
-                <h2 class="stacked-features-title">See EDGEBOOK <span class="gradient">In Action</span></h2>
-                <p class="stacked-features-subtitle">Click through each feature to see how EDGEBOOK helps you track,
+                <h2 class="stacked-features-title">See EdgeBook <span class="gradient">In Action</span></h2>
+                <p class="stacked-features-subtitle">Click through each feature to see how EdgeBook helps you track,
                     review, and improve your trading.</p>
             </div>
             <div class="stacked-features-content reveal">
@@ -3600,11 +3605,11 @@
                     </div>
                     <div class="feature-tab" data-feature="analytics">
                         <h3 class="feature-tab-title">
-                            📊 Performance Analytics
+                            🖊️ Annotate Charts
                             <span class="feature-tab-toggle">+</span>
                         </h3>
-                        <p class="feature-tab-desc">Track your edge over time. See which setups and patterns are
-                            actually working.</p>
+                        <p class="feature-tab-desc">Mark up charts directly in the app. Add notes, highlights, and
+                            insights without leaving your workspace.</p>
                     </div>
                 </div>
                 <div class="feature-display">
@@ -3613,7 +3618,7 @@
                     <img src="assets/images/app_screenshot.png" alt="Pattern Library" data-feature="pattern">
                     <img src="assets/images/app_screenshot.png" alt="Trade Tagging" data-feature="tagging">
                     <img src="assets/images/app_screenshot.png" alt="Review Workflow" data-feature="workflow">
-                    <img src="assets/images/app_screenshot.png" alt="Performance Analytics" data-feature="analytics">
+                    <img src="assets/images/app_screenshot.png" alt="Annotate Charts" data-feature="analytics">
                 </div>
             </div>
         </div>
@@ -3653,7 +3658,7 @@
                 <span class="section-label">Our Story</span>
                 <h2 class="section-title">Built by a trader who was tired of losing the signal.</h2>
                 <p class="section-subtitle">Thirteen years of taking before/after screenshots, buried in folders and
-                    drives. The patterns were there—I just couldn't reliably find them. EDGEBOOK exists so every trader
+                    drives. The patterns were there—I just couldn't reliably find them. EdgeBook exists so every trader
                     can surface their edge without digging through a messy bucket of files.</p>
             </div>
 
@@ -3662,7 +3667,7 @@
                     <div class="story-heading">Why I built this</div>
                     <p class="story-text">After more than a decade trading, my screenshots kept vanishing into unlabeled
                         folders and random Google Drive buckets. When I wanted to revisit a setup, I spent more time
-                        hunting than learning. I built EDGEBOOK to make chart journaling fast, structured, and actually
+                        hunting than learning. I built EdgeBook to make chart journaling fast, structured, and actually
                         reviewable for all of us.</p>
                 </div>
                 <div class="story-card reveal reveal-delay-2">
@@ -4037,7 +4042,7 @@
                 <div>
                     <div class="footer-logo">
                         <div class="footer-logo-icon">E</div>
-                        <span class="footer-logo-text">EDGEBOOK</span>
+                        <span class="footer-logo-text">EdgeBook</span>
                     </div>
                     <p class="footer-copy" style="max-width: 320px;">The chart-first trading journal for teams and
                         individuals. Built for speed, review, and repeatable edge.</p>
@@ -4090,7 +4095,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p class="footer-copy">&copy; 2025 EDGEBOOK. All rights reserved.</p>
+                <p class="footer-copy">&copy; 2025 EdgeBook. All rights reserved.</p>
                 <div class="footer-legal">
                     <span>Built for trading teams &amp; pros</span>
                     <span>•</span>
