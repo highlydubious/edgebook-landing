@@ -3283,14 +3283,18 @@
             /* Hero video container - taller aspect for small mobile */
             .hero-content-image {
                 border-radius: 12px;
-                aspect-ratio: 3/2;
-                min-height: 280px;
+                aspect-ratio: 1/1;
+                min-height: 300px;
+                overflow: hidden;
             }
 
+            /* Crop out mac window chrome, show just the app content */
             .hero-content-image video {
-                min-height: 280px;
+                min-height: 300px;
                 object-fit: cover;
-                object-position: top center;
+                object-position: center 15%;
+                transform: scale(1.3);
+                transform-origin: center 30%;
             }
 
             /* Feature display */
@@ -3371,17 +3375,20 @@
             /* Hero image container - taller on mobile for better visibility */
             .hero-content-image {
                 height: auto;
-                min-height: 300px;
+                min-height: 320px;
                 aspect-ratio: 4/3;
+                overflow: hidden;
             }
 
-            /* Video aspect ratio for mobile */
+            /* Video - crop out mac window chrome, zoom into app content */
             .hero-content-image video {
                 width: 100% !important;
                 height: 100%;
-                min-height: 300px;
+                min-height: 320px;
                 object-fit: cover;
-                object-position: top center;
+                object-position: center 20%;
+                transform: scale(1.2);
+                transform-origin: center 25%;
             }
 
             /* Stacked features section */
