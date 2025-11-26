@@ -3167,6 +3167,278 @@
                 display: none;
             }
         }
+
+        /* ===== TABLET (iPad) BREAKPOINT ===== */
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .container {
+                padding: 0 32px;
+            }
+
+            .hero-title {
+                font-size: 52px;
+            }
+
+            .hero-subtitle {
+                font-size: 18px;
+            }
+
+            /* Hero tabs - horizontal scroll on tablet */
+            .hero-content-tabs {
+                max-width: 100%;
+                overflow-x: auto;
+                justify-content: flex-start;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+            }
+
+            .hero-content-tabs::-webkit-scrollbar {
+                display: none;
+            }
+
+            .hero-content-tab {
+                padding: 14px 20px;
+                font-size: 14px;
+                flex-shrink: 0;
+            }
+
+            /* Feature display smaller on tablet */
+            .feature-display {
+                height: 400px;
+            }
+
+            .stacked-features-content {
+                gap: 32px;
+            }
+
+            /* Pricing - 2 columns on tablet */
+            .pricing-cards {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1.02);
+            }
+
+            .section-title {
+                font-size: 36px;
+            }
+
+            .section-subtitle {
+                font-size: 16px;
+            }
+        }
+
+        /* ===== MOBILE SMALL (under 480px) ===== */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .hero {
+                padding: 100px 16px 40px;
+            }
+
+            .hero-title {
+                font-size: 32px;
+                line-height: 1.2;
+            }
+
+            .hero-subtitle {
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .section-subtitle {
+                font-size: 14px;
+            }
+
+            /* Hero tabs - vertical stack on small mobile */
+            .hero-content-tabs {
+                flex-direction: column;
+                border-radius: 16px;
+                width: 100%;
+                padding: 8px;
+            }
+
+            .hero-content-tab {
+                width: 100%;
+                text-align: center;
+                padding: 14px 16px;
+                font-size: 14px;
+            }
+
+            .hero-tab-slider {
+                display: none;
+            }
+
+            .hero-content-tab.active {
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 12px;
+            }
+
+            /* Hero video container */
+            .hero-content-image {
+                border-radius: 12px;
+            }
+
+            .hero-content-image video {
+                min-height: 200px;
+            }
+
+            /* Feature display */
+            .feature-display {
+                height: 250px;
+            }
+
+            .feature-tab {
+                padding: 16px;
+            }
+
+            .feature-tab-title {
+                font-size: 16px;
+            }
+
+            .feature-tab-desc {
+                font-size: 14px;
+            }
+
+            /* Pricing cards */
+            .pricing-card {
+                padding: 24px 20px;
+            }
+
+            .pricing-price {
+                font-size: 36px;
+            }
+
+            .pricing-card-title {
+                font-size: 20px;
+            }
+
+            /* How section steps */
+            .how-step-number {
+                width: 48px;
+                height: 48px;
+                font-size: 20px;
+            }
+
+            .how-step-title {
+                font-size: 18px;
+            }
+
+            .how-step-desc {
+                font-size: 14px;
+            }
+
+            /* Final CTA */
+            .final-cta-box {
+                padding: 40px 20px;
+                border-radius: 20px;
+            }
+
+            .final-cta-title {
+                font-size: 28px;
+            }
+
+            /* Footer */
+            .footer-brand-desc {
+                font-size: 14px;
+            }
+
+            /* Buttons */
+            .btn-primary,
+            .btn-secondary {
+                padding: 14px 24px;
+                font-size: 15px;
+            }
+        }
+
+        /* ===== ADDITIONAL MOBILE FIXES ===== */
+        @media (max-width: 768px) {
+            /* Ensure hero content wrapper has proper padding */
+            .hero-content-wrapper {
+                padding: 0;
+            }
+
+            /* Video aspect ratio for mobile */
+            .hero-content-image video {
+                width: 100% !important;
+                min-height: 220px;
+            }
+
+            /* Stacked features section */
+            .stacked-features-content {
+                gap: 24px;
+            }
+
+            .stacked-features-title {
+                font-size: 32px;
+                text-align: center;
+            }
+
+            /* Feature display on mobile - show below tabs */
+            .feature-display {
+                height: 280px;
+                margin-top: 24px;
+            }
+
+            /* Problem cards */
+            .problem-card {
+                padding: 24px;
+            }
+
+            .problem-card-title {
+                font-size: 18px;
+            }
+
+            /* Testimonials */
+            .testimonial-card {
+                padding: 24px;
+            }
+
+            .testimonial-text {
+                font-size: 15px;
+            }
+
+            /* Logo badges - wrap on mobile */
+            .logo-badges {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 16px;
+            }
+
+            /* Section spacing */
+            section {
+                padding: 60px 0;
+            }
+
+            .hero-content-section {
+                padding: 60px 0;
+            }
+        }
+
+        /* ===== LANDSCAPE MOBILE ===== */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .hero {
+                padding: 80px 20px 40px;
+            }
+
+            .hero-title {
+                font-size: 28px;
+            }
+
+            .mobile-menu {
+                padding-top: 60px;
+            }
+
+            .mobile-menu-link {
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 
