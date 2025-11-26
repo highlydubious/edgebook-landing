@@ -3280,25 +3280,9 @@
                 border-radius: 12px;
             }
 
-            /* Hero video container - crop out mac window chrome on mobile */
+            /* Hide hero video section on small mobile */
             .hero-content-image {
-                border-radius: 12px;
-                aspect-ratio: 1/1;
-                min-height: 280px;
-                overflow: hidden;
-                position: relative;
-            }
-
-            /* Hide mac window chrome - shift video up and scale to crop top */
-            .hero-content-image video {
-                position: absolute;
-                top: -15%;
-                left: -10%;
-                width: 120% !important;
-                height: 130%;
-                min-height: 350px;
-                object-fit: cover;
-                object-position: center top;
+                display: none;
             }
 
             /* Feature display */
@@ -3376,25 +3360,9 @@
                 padding: 0;
             }
 
-            /* Hero image container - crop mac window chrome on tablet */
+            /* Hide hero video section on mobile */
             .hero-content-image {
-                height: auto;
-                min-height: 300px;
-                aspect-ratio: 4/3;
-                overflow: hidden;
-                position: relative;
-            }
-
-            /* Hide mac window chrome - shift video up to crop the title bar */
-            .hero-content-image video {
-                position: absolute;
-                top: -12%;
-                left: -5%;
-                width: 110% !important;
-                height: 125%;
-                min-height: 380px;
-                object-fit: cover;
-                object-position: center top;
+                display: none;
             }
 
             /* Stacked features section */
