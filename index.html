@@ -47,6 +47,7 @@
 
         html {
             scroll-behavior: smooth;
+            overflow-x: hidden;
         }
 
         body {
@@ -55,6 +56,7 @@
             color: var(--text-primary);
             line-height: 1.6;
             overflow-x: hidden;
+            max-width: 100vw;
         }
 
         /* ===== PREMIUM BACKGROUND EFFECTS ===== */
@@ -3284,10 +3286,14 @@
             .hero-content-image {
                 border-radius: 12px;
                 min-height: 250px;
+                max-width: 100%;
+                overflow: hidden;
             }
 
             .hero-content-image video {
                 min-height: 250px;
+                max-width: 100%;
+                width: 100% !important;
             }
 
             /* Feature display */
@@ -3368,10 +3374,14 @@
             /* Hero video container on mobile */
             .hero-content-image {
                 min-height: 280px;
+                max-width: 100%;
+                overflow: hidden;
             }
 
             .hero-content-image video {
                 min-height: 280px;
+                max-width: 100%;
+                width: 100% !important;
             }
 
             /* Stacked features section */
