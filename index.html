@@ -3280,13 +3280,17 @@
                 border-radius: 12px;
             }
 
-            /* Hero video container */
+            /* Hero video container - taller aspect for small mobile */
             .hero-content-image {
                 border-radius: 12px;
+                aspect-ratio: 3/2;
+                min-height: 280px;
             }
 
             .hero-content-image video {
-                min-height: 200px;
+                min-height: 280px;
+                object-fit: cover;
+                object-position: top center;
             }
 
             /* Feature display */
@@ -3364,10 +3368,20 @@
                 padding: 0;
             }
 
+            /* Hero image container - taller on mobile for better visibility */
+            .hero-content-image {
+                height: auto;
+                min-height: 300px;
+                aspect-ratio: 4/3;
+            }
+
             /* Video aspect ratio for mobile */
             .hero-content-image video {
                 width: 100% !important;
-                min-height: 220px;
+                height: 100%;
+                min-height: 300px;
+                object-fit: cover;
+                object-position: top center;
             }
 
             /* Stacked features section */
